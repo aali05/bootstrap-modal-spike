@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UI Bootstrap Demo!</title>
+    <!-- AngularJS -->
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+
+    <!-- UI Bootstrap Stuff -->
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendors/ui-bootstrap-csp.css" />
+    <script type="text/javascript" src="/vendors/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="/vendors/ui-bootstrap-tpls.js"></script>
+
+    <!-- My App Stuff -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="scripts/controllers/admin.controller.js"></script>
+
+    <!-- ngRoute stuff -->
+    <base href="/">
+</head>
+<body>
+  <body ng-app="myApp" ng-controller="HomeController">
+  <div class="container">
+    <header ng-include="'/views/pages/nav.html'"></header>
+
+    <main ng-view></main>
+  </div>
+</body>
+</body>
+</html>
