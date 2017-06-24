@@ -41,7 +41,7 @@ myApp.controller( 'AddLocationModalInstanceController', [ '$uibModalInstance', '
     var itemToSend = {
       name: vm.name,
       description: vm.description,
-      address: vm.purchasedate,
+      address: vm.address,
       phoneNum: vm.phoneNum,
       websiteURL: vm.websiteURL
     };
@@ -64,7 +64,9 @@ myApp.controller( 'AddLocationModalInstanceController', [ '$uibModalInstance', '
     $uibModalInstance.close();
   };
 
-
+  vm.cancel = function () {
+      $uibModalInstance.dismiss('cancel');
+    };
 
   vm.clearLocationInputs();
 }]);
